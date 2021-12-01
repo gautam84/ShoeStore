@@ -10,6 +10,7 @@
             type="com.udacity.shoestore.viewmodels.LoginViewModel" />
     </data>
 
+    <!--    Constraint Layout is used here because it supports multiple screen sizes and is very easy to use. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

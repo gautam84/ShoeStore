@@ -70,7 +70,7 @@ class ListingFragment : Fragment() {
 
     private fun navigate(): Boolean {
         loginViewModel.logOut()
-        findNavController().navigate(R.id.loginFragment)
+        findNavController().navigate(ListingFragmentDirections.actionListingFragmentToLoginFragment())
         return false
     }
 

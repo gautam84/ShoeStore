@@ -5,19 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.welcome.WelcomeFragment">
 
+    <!--    Constraint Layout is used here because it supports multiple screen sizes and is very easy to use. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingEnd="16dp"
-        android:paddingStart="16dp">
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
 
         <TextView
             android:id="@+id/welcomeText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome"
             android:fontFamily="@font/roboto"
+            android:text="@string/welcome"
             android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/welcomeText2"
             app:layout_constraintEnd_toEndOf="parent"
