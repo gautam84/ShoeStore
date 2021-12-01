@@ -13,7 +13,7 @@ import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentListingBinding
 import com.udacity.shoestore.databinding.FragmentWelcomeBinding
-import com.udacity.shoestore.databinding.ShowItemBinding
+import com.udacity.shoestore.databinding.ShoeItemBinding
 import com.udacity.shoestore.viewmodels.LoginViewModel
 import com.udacity.shoestore.viewmodels.ShoeListViewModel
 import timber.log.Timber
@@ -40,7 +40,7 @@ class ListingFragment : Fragment() {
         viewModel.shoeList.observe(this as LifecycleOwner, Observer {
 
             for (shoe in viewModel.shoeList.value!!) {
-                val inBinding = ShowItemBinding.inflate(layoutInflater)
+                val inBinding = ShoeItemBinding.inflate(layoutInflater)
                 inBinding.shoeData = shoe
                 binding.listLayout.addView(inBinding.root)
             }
